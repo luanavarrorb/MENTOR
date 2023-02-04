@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS Cadastro/cadastro.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Cadastre-se</title>
+</head>
+<body>
+  <header class="header-logo">
+      <div>
+      <input class="input-login"  type="email" placeholder="E-mail"> 
+      
+      <input class="input-login"  type="password" placeholder="Senha">
+      
+      <button  class="btn-header"> Enviar</button>
+    </div>
+  </header>
+  <div class="div-all">
+    <div class="div-image"><img src="CSS Cadastro/Logo Mentor fundo preto.png" alt="Logo Mentor"></div>
+    <div class="div-form">
+      <form action="test.html" class="formulario" id="form">
+        <h1 class="h1-form">Cadastre-se</h1>
+        <div class="line"></div>
+        <div class="div-formulario">
+          <div class="alinhamento">
+            <label class="input-label" for="nome">Nome:</label>
+            <input class="input-formulario" id="nome" type="text" required>
+            
+          </div> 
+          <div class="alinhamento">
+            <label class="input-label" for="sobrenome">Sobrenome:</label>
+            <input class="input-formulario" id="sobrenome"  type="text">
+          </div> 
+          <div class="alinhamento">
+            <label class="input-label" for="email">E-mail:</label>
+            <input class="input-formulario"  id="email" type="email" required>
+          </div> 
+          <div class="alinhamento">
+            <label class="input-label" for="novamente">Confirmar e-mail:</label>
+            <input class="input-formulario" maxlength="60" id="novamente" type="email" required>
+            <br>
+          </div>
+          <div class="alinhamento">
+            <label class="input-label" for="senha">Senha:</label>
+            <input class="input-formulario" id="senha" type="password" required>
+            
+          </div>
+          <div class="alinhamento">
+            <label class="input-label" for="senha-novamente">Confirmar senha:</label>
+            <input class="input-formulario" id="senha-novamente" type="password" required> 
+          </div>
+          <div class="alinhamento">
+            <label class="input-label" for="cep">Cep:</label>
+            <input class="input-formulario" id="cep" type="text"> 
+          </div>
+          <div class="alinhamento">
+            <label class="input-label" for="logradouro">Logradouro:</label>
+            <input class="input-formulario" id="logradouro" type="text"> 
+          </div>
+          <div class="alinhamento">
+            <label class="input-label" for="bairro">Bairro:</label>
+            <input class="input-formulario" id="bairro" type="text"> 
+          </div>
+          <div class="alinhamento">
+            <label class="input-label" for="localidade">Localidade:</label>
+            <input class="input-formulario" id="localidade" type="text"> 
+          </div>
+          <div class="alinhamento">
+            <label class="input-label" for="uf">UF:</label>
+            <input class="input-formulario" id="uf" type="text"> 
+          </div>
+          <div class="div-btn"><button onclick="redirecionar()"  class="btn-form" >Cadastrar</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+
+
+  <script src="../script.js"></script>
+  <script src="api.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

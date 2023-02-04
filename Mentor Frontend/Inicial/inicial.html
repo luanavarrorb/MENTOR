@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+      <section class="card">
+        <div class="imagem">
+            <img src="css/img/Logo Mentor fundo preto.png" alt="logo Mentor" height="80" width="200">
+            <div class="frase">
+            <p>Os melhores mentores estão aqui</p>
+            </div>
+        </div>
+
+        <div class="card-login">
+            <input type="email" placeholder="E-mail" id="email">
+            <input type="password" placeholder="Senha" id="senha">
+            <a href="../Cadastro/cadastro.html"><input type="button" value="Entrar" id="entrar"></a>
+            <div class="link">
+            <a href="../Cadastro/cadastro.html">Esqueceu a senha?</a>
+            </div>
+            <a href="../Cadastro/cadastro.html"><input type="button"  value="Criar nova conta" id="novaconta"></a>
+        </div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+    <script src="api.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
